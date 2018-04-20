@@ -2,27 +2,16 @@
 <view class="grid">
 
     <!--hot news list-->
-    <view class="card short-card" wx:for="{{data}}" wx:for-index="itemIndex">
-        <view><text class="title">{{ item.title }}</text></view>
+    <view class="card short-card">
+        <view><text class="title">{{ data.title }}</text></view>
         <view class="btn-area">
-            <button type="default" size="mini" data-index="{{itemIndex}}" bindtap="modalTap">SHOW DETAILS</button>
+            <button type="default" size="mini" bindtap="modalTap">显示答案</button>
         </view>
     </view>
 </view>
 
-<modal title="NEWS DETAIL" confirm-text="confirm" hidden="{{modalHidden}}" no-cancel bindconfirm="modalHide">
+<modal title="" confirm-text="close" hidden="{{modalHidden}}" no-cancel bindconfirm="modalHide">
     <view>
-        <image class="news-avatar" src="{{modalContent.img}}" background-size="cover"></image>    </view>
-    <view>
-        <text>Title: {{modalContent.title}}</text>
+        <text>{{data.content}}</text>
     </view>
-    <view>
-        <text>Account: {{modalContent.account}}</text>
-    </view>
-    <view>
-        <text>Date: {{modalContent.date}}</text>
-    </view>
-    <view>
-            LINK: <text>{{modalContent.link}}</text>
-        </view>
 </modal>
