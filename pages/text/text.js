@@ -5,7 +5,7 @@ var root = getApp()
 Page({
   data: {
     data: {
-      'title': 'aaaa', 'content': '（一）调查用人单位劳动标准实施情况的主要方法：1、问卷法；2、访谈法；3、观察法；4、关键事件法。      （二）分析用人单位劳动标准实施情况的主要方法：      1、计划标准；2、强制性标准；3、空间标准。'},
+      'title': '', 'content': ''},
     modalHidden: true,
   },
   onLoad: function () {
