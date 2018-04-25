@@ -1,0 +1,17 @@
+<!--text.wxml-->
+<view class="grid">
+
+    <!--hot news list-->
+    <view class="card short-card" wx:for="{{data}}" wx:for-index="itemIndex" >
+        <view><text class="title">{{ item.title }}</text></view>
+        <view class="btn-area">
+            <button type="default" size="mini" bindtap="modalTap" data-index="{{itemIndex}}">显示答案</button>
+        </view>
+    </view>
+</view>
+
+<modal title="" confirm-text="close" hidden="{{modalHidden}}" no-cancel bindconfirm="modalHide">
+    <view>
+        <text>{{modalContent.content}}</text>
+    </view>
+</modal>

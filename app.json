@@ -1,12 +1,13 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/text/text"
+    "pages/text/text",
+    "pages/reco/reco"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#FF7017",
     "navigationBarTitleText": "劳动关系协调师",
-    "navigationBarTextStyle":"white"
+    "navigationBarTextStyle": "white"
   }
 }

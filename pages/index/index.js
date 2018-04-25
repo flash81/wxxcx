@@ -4,7 +4,7 @@ var app = getApp()
 Page({
   data: {
     userInfo: {},
-    welcome: "奔跑吧！少年",
+    welcome: "98题",
   },
   //事件处理函数
   bindViewTap: function() {
@@ -12,7 +12,12 @@ Page({
       url: '../text/text'
     })
   },
-  
+  //事件处理函数
+  bindViewTap40: function () {
+    wx.navigateTo({
+      url: '../reco/reco'
+    })
+  },
   onLoad: function () {
     var that = this
     console.log('onLoad')

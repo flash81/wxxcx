@@ -23,3 +23,7 @@
 page, view {
     font-family: arial,'pingfang sc',stheiti,"microsoft yahei",sans-serif
 }
+
+.user-motto{
+  float:left;margin-right: 5px;
+}

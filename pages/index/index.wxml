@@ -6,5 +6,6 @@
   </view>
   <view class="usermotto">
     <button type="primary" class="user-motto" bindtap="bindViewTap">{{welcome}}</button>
+    <button type="primary" class="user-motto" bindtap="bindViewTap40">40押题</button>
   </view>
 </view>
